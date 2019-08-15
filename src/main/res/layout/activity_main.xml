@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.caffeorder.MainActivity"
+    android:orientation="vertical"
+    android:background="#f06966">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TYPE"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#f06966"
+            android:background="#f1ac9d"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp"
+            >
+            <RadioButton
+                android:id="@+id/btn_Espresso"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Espresso"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#f06966"
+                android:background="#f1ac9d"
+                android:layout_margin="5dp"
+                />
+
+            <RadioButton
+                android:id="@+id/btn_Cappuccino"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cappuccino"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#f06966"
+                android:background="#f1ac9d"
+                android:layout_margin="5dp"
+                />
+
+            <RadioButton
+                android:id="@+id/btn_Mocha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mocha"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:textColor="#f06966"
+                android:background="#f1ac9d"
+                android:layout_margin="5dp"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#dee2d1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#f06966"
+            android:background="#f1ac9d"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            />
+
+        <CheckBox
+            android:id="@+id/check_Cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cream"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#f06966"
+            android:background="#f1ac9d"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            />
+
+        <CheckBox
+            android:id="@+id/check_Choco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choco"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#f06966"
+            android:background="#f1ac9d"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            />
+
+        <CheckBox
+            android:id="@+id/check_Milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milk"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#f06966"
+            android:background="#f1ac9d"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#dee2d1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingMinus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_minus"
+            android:backgroundTint="#f1ac9d"
+            app:rippleColor="#B7CE63"
+            android:layout_margin="3dp"
+            />
+
+        <TextView
+            android:id="@+id/btnNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#f06966"
+            android:background="@drawable/background_number"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:inputType="number"
+            android:maxLines="2"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingPlus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_plus"
+            android:backgroundTint="#f1ac9d"
+            app:rippleColor="#B7CE63"
+            android:layout_margin="3dp"
+            />
+
+        <TextView
+            android:id="@+id/resultOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Now"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#f06966"
+            android:background="@drawable/background_order"
+            android:gravity="center"
+            android:padding="7dp"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
